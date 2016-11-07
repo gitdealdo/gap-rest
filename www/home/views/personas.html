@@ -1,0 +1,19 @@
+<div ng-controller="PersonasCtrl">
+  <h3>Lista de personas</h3>
+  <table>
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Nombres</th>
+        <th>Acción</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat="d in personas">
+        <td>{{$index+1}}</td>
+        <td>{{d.nombres}}</td>
+        <td><button>Ver</button></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
